@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.Controller">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MainMenuImage.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="720.0">
+         <children>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="600.0" text="Workout Logging Software " textAlignment="CENTER" wrapText="true">
+               <VBox.margin>
+                  <Insets left="60.0" right="60.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Lucida Console" size="38.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="45.0" prefHeight="50.0" prefWidth="250.0" text="GUI Edition" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Lucida Console" size="30.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#menuLog" prefHeight="40.0" prefWidth="240.0" text="Log a new Workout">
+               <VBox.margin>
+                  <Insets top="47.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="250.0" layoutY="226.0" mnemonicParsing="false" onAction="#menuView" prefHeight="40.0" prefWidth="240.0" text="View All logged Workouts">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="250.0" layoutY="107.0" mnemonicParsing="false" onAction="#menuDelete" prefHeight="40.0" prefWidth="240.0" text="Delete all Workouts">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="250.0" layoutY="147.0" mnemonicParsing="false" onAction="#menuExit" prefHeight="40.0" prefWidth="240.0" text="Exit Application">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="55.0" prefHeight="31.0" prefWidth="325.0" text="Developed by Parminder Singh    ©2022" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Lucida Console" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="-395.0" top="37.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
